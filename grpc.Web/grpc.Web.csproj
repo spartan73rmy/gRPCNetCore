@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore" Version="2.32.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.1.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.1.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="..\..\..\CursoMicroservicios\Shop.Microservicios\Existence.grpc\Protos\helloworld.proto" GrpcServices="Client">
+      <Link>Protos\helloworld.proto</Link>
+    </Protobuf>
+  </ItemGroup>
+
+</Project>
